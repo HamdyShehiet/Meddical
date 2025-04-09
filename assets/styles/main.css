@@ -1,2 +1,4 @@
-/* font-family: "Yeseva One", serif; */
-/* font-family: "Work Sans", sans-serif; */
+:root{
+  --yesevaOne-ff: "Yeseva One", serif;
+  --workSans-ff: "Work Sans", sans-serif;
+}
