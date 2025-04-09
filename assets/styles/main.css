@@ -1,4 +1,37 @@
 :root{
   --yesevaOne-ff: "Yeseva One", serif;
   --workSans-ff: "Work Sans", sans-serif;
+  --fs-14px: 0.875rem;
+  --fs-16px: 1rem;
+  --fs-18px: 1.125rem;
+  --fs-26px: 1.625rem;
+  --fs-32px: 2rem;
+  --fs-48px: 3rem ;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --space-2px : 0.125rem;
+  --space-4px : 0.25rem;
+  --space-6px : 0.375rem;
+  --space-8px : 0.5rem;
+  --space-12px : 0.75rem;
+  --space-16px : 1rem;
+  --space-20px : 1.25rem;
+  --space-24px : 1.5rem;
+  --space-28px : 1.75rem;
+  --space-28px : 3rem;
+  --space-32px : 2rem;
+  --space-64px : 4rem;
+  --light-clr : #fcfefe;
+  --dark-clr : #212124;
+  --primary-clr : #1F2B6C;
+  --secondary-clr : #159EEC;
+  --accent-clr : #bfd2f8;
+}
+body.dark-theme{
+  --light-clr: #121212;
+  --dark-clr : #ffffff;
+  --primary-clr : #1F2B6C;
+  --secondary-clr : #159EEC;
+  --accent-clr : #bfd2f8;
 }
