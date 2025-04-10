@@ -38,7 +38,7 @@ html {
 }
 body {
   font-weight: var(--fw-normal);
-  background-color: var(--body-color);
+  background-color: var(--light-clr);
 }
 body.dark-theme {
   --light-clr: #121212;
@@ -47,7 +47,7 @@ body.dark-theme {
   --secondary-clr: #159eec;
   --accent-clr: #bfd2f8;
 }
-.container {
+.container{
   width: min(62rem, 100% - 2.5rem);
   margin: auto;
 }
