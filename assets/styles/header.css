@@ -44,7 +44,7 @@ body {
   font-weight: var(--fw-normal);
   background-color: var(--light-clr);
 }
-body.dark-theme{
+body.dark-theme {
   --light-clr: #121212;
   --dark-clr: #ffffff;
   --primary-clr: #1f2b6c;
@@ -108,7 +108,7 @@ header .container nav ul li a {
   display: block;
   font-size: var(--fs-16px);
 }
-header .container ul li a.active{
+header .container ul li a.active {
   font-weight: var(--fw-semibold);
 }
 header .container .nav-right {
@@ -138,11 +138,15 @@ header .container .nav-right .search-btn {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     background-color: var(--accent-clr);
   }
-  header .container nav ul.menu{
+  header .container nav ul.menu {
     display: flex;
   }
   header .container nav ul li a {
     color: var(--primary-clr);
+  }
+  header .container nav ul li a.active,
+  header .container nav ul li a:hover {
+  font-weight: var(--fw-semibold);
   }
   header .container .nav-right > a {
     display: none;
@@ -162,6 +166,7 @@ header .container .nav-right .search-btn {
     color: var(--accent-clr) !important;
   }
 }
+
 @media (min-width: 992px) {
   header .container .logo {
     display: none;
@@ -180,10 +185,14 @@ header .container .nav-right .search-btn {
   header .container ul > li:last-child {
     display: none;
   }
-  header .container ul li a{
+  header .container ul li a {
     color: var(--light-clr);
   }
-  header .container ul li a.active{
+  header .container ul li a.active {
+    color: var(--accent-clr);
+  }
+  header .container nav ul li a.active,
+  header .container nav ul li a:hover {
     color: var(--accent-clr);
   }
   header .container .nav-right .menu-btn {

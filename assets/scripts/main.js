@@ -3,18 +3,18 @@ let themeBtn = document.getElementById("theme-btn");
 let menuBtn = document.getElementById("menu-btn");
 let menuIcon = document.getElementById("menu-icon");
 let themeIcon = document.getElementById("theme-icon");
-let menuLinks = document.querySelectorAll("#menu li a")
+let menuLinks = document.querySelectorAll("#menu li a");
 
-
-menuLinks.forEach((ele)=>{
-  ele.onclick = function (){
-      menuLinks.forEach((element)=>{
-          element.classList.remove("active");
-      })
-      this.classList.add("active");
-  }
-  
-})
+menuLinks.forEach((ele) => {
+  ele.onclick = function () {
+    menuLinks.forEach((element) => {
+      element.classList.remove("active");
+    });
+    this.classList.add("active");
+    menu.classList.remove("menu");
+    menuIcon.classList.replace("fa-xmark", "fa-bars");
+  };
+});
 
 menuBtn.onclick = () => {
   menu.classList.toggle("menu");
@@ -39,16 +39,16 @@ let lightMode = () => {
 
 const storedTheme = localStorage.getItem("theme");
 if (storedTheme === "dark") {
-  darkMode()
+  darkMode();
 } else {
-  lightMode()
+  lightMode();
 }
 
 themeBtn.onclick = () => {
-const storedTheme = localStorage.getItem("theme");
+  const storedTheme = localStorage.getItem("theme");
   if (storedTheme === "dark") {
-    lightMode()
+    lightMode();
   } else {
-    darkMode()
+    darkMode();
   }
 };
