@@ -6,6 +6,7 @@
     <title>Meddical</title>
     <link rel="stylesheet" href="assets/styles/main.css" />
     <link rel="stylesheet" href="assets/styles/topHeader.css" />
+    <link rel="stylesheet" href="assets/styles/header.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap" rel="stylesheet" />
@@ -20,12 +21,10 @@
   <body>
     <div class="top-header">
       <div class="container flex items-center justify-between">
-        <a href="index.html" class="logo">
-          <span>MED</span><span>DICAL</span>
-        </a>
+        <a href="index.html" class="logo"> <span>MED</span><span>DICAL</span> </a>
         <div class="contact-info flex items-center">
           <div class="contact-info-item">
-            <i class="fas fa-phone-alt"></i>
+            <i class="fa-solid fa-phone-volume"></i>
             <div class="details">
               <span>Emergency</span>
               <span>(237) 681-812-255</span>
@@ -39,7 +38,7 @@
             </div>
           </div>
           <div class="contact-info-item">
-            <i class="fas fa-map-marker-alt"></i>
+            <i class="fa-solid fa-location-dot"></i>
             <div class="details">
               <span>Location</span>
               <span>0123 Some Place</span>
@@ -48,6 +47,28 @@
         </div>
       </div>
     </div>
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo"> <span>MED</span><span>DICAL</span> </a>
+        <nav>
+            <ul id="menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#doctors">Doctors</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#appointment" class="appointment-link">Appointment</a></li>
+            </ul>
+            <div class="nav-right">
+              <button id="search-btn" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button id="menu-btn"    class="menu-btn"><i id="menu-icon" class="fa-solid fa-bars"></i></button>
+              <button id="theme-btn"    class="menu-btn"><i id="theme-icon" class="fa-solid fa-moon"></i></button>
+              <a href="#appointment" class="main-btn">Appointment</a>
+            </div>
+          </nav>
+      </div>
+    </header>
     <script src="assets/scripts/main.js"></script>
   </body>
 </html>
