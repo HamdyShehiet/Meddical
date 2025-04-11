@@ -47,7 +47,7 @@ body.dark-theme{
   --accent-clr: #1f2b6c;
 }
 .container{
-  width: min(62rem, 100% - 1.25rem);
+  width: min(73.125rem, 100% - 2.5rem);
   margin: auto;
 }
 a {
@@ -70,7 +70,7 @@ span {
   align-items: center;
 }
 .top-header{
-  padding: var(--space-16px) var(--space-16px);
+  padding-block:var(--space-16px);
 }
 .top-header .container a.logo{
   display: none;

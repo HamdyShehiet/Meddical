@@ -52,7 +52,7 @@ body.dark-theme {
   --accent-clr: #bfd2f8;
 }
 .container {
-  width: min(62rem, 100% - 2.5rem);
+  width: min(73.125rem, 100% - 2.5rem);
   margin: auto;
 }
 ul {

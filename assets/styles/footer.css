@@ -9,8 +9,10 @@
   --fs-14px: 0.875rem;
   --fs-16px: 1rem;
   --fs-18px: 1.125rem;
+  --fs-20px: 1.25rem;
   --fs-26px: 1.625rem;
   --fs-32px: 2rem;
+  --fs-36px: 2.25rem;
   --fs-48px: 3rem;
   --fw-normal: 400;
   --fw-medium: 500;
@@ -49,7 +51,7 @@ body.dark-theme {
   --accent-clr: #bfd2f8;
 }
 .container{
-  width: min(62rem, 100% - 2.5rem);
+  width: min(73.125rem, 100% - 2.5rem);
   margin: auto;
 }
 ul {
@@ -99,4 +101,56 @@ img {
 }
 .text-center{
   text-align: center;
+}
+footer {
+  margin-top: 10px;
+  padding-block: var(--space-64px);
+  background-color: var(--primary-clr);
+}
+footer .container .footer-top{
+  grid-template-columns: repeat(auto-fit,min(17.5rem, 100%));
+  gap: var(--space-12px);
+  padding-bottom: var(--space-28px);
+  font-family: var(--workSans-ff);
+}
+footer .container .footer-top>div.footer-logo>a {
+  font-family: var(--yesevaOne-ff);
+  font-size: var(--fs-36px);
+  color: var(--accent-clr);
+}
+footer .container .footer-top>div.footer-logo>p{
+  font-size: var(--fs-18px);
+  color: var(--light-clr);
+}
+footer .container .footer-top>div.footer-links>span,
+footer .container .footer-top>div.newsletter>span{
+  display: inline-block;
+  margin-bottom: var(--space-32px);
+  font-size: var(--fs-16px);
+  font-weight: var(--fw-semibold);
+  color: var(--light-clr);
+}
+footer .container .footer-top>div.footer-links>ul li{
+  margin-bottom: var(--space-8px);
+  font-size: var(--fs-16px);
+  color: var(--light-clr);
+}
+footer .container .footer-top>div.newsletter .newsletter-form{
+  padding: var(--space-12px);
+  border-radius: 5px;
+  font-size: var(--fs-16px);
+  background-color: var(--accent-clr);
+  color: var(--primary-clr);
+}
+footer .container .footer-top>div.newsletter .newsletter-form .newsletter-input{
+  flex-grow: 1;
+  font-weight: var(--fw-medium);
+  background-color: transparent;
+}
+footer .container .footer-top>div.newsletter .newsletter-form .newsletter-input::placeholder{
+  font-weight: var(--fw-medium);
+  color: inherit;
+}
+footer .container .footer-top>div.newsletter .newsletter-form .newsletter-button{
+  font-size: var(--fs-20px);
 }
