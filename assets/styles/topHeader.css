@@ -1,20 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 :root {
   --yesevaOne-ff: "Yeseva One", serif;
   --workSans-ff: "Work Sans", sans-serif;
   --fs-14px: 0.875rem;
   --fs-16px: 1rem;
   --fs-18px: 1.125rem;
+  --fs-20px: 1.25rem;
+  --fs-24px: 1.5rem;
   --fs-26px: 1.625rem;
+  --fs-28px: 1.75rem;
   --fs-32px: 2rem;
   --fs-36px: 2.25rem;
   --fs-48px: 3rem;
   --fw-normal: 400;
   --fw-medium: 500;
+  --fw-semibold: 600;
   --fw-bold: 700;
   --space-2px: 0.125rem;
   --space-4px: 0.25rem;
@@ -25,8 +24,8 @@
   --space-20px: 1.25rem;
   --space-24px: 1.5rem;
   --space-28px: 1.75rem;
-  --space-28px: 3rem;
   --space-32px: 2rem;
+  --space-48px: 3rem;
   --space-64px: 4rem;
   --light-clr: #fcfefe;
   --dark-clr: #212124;
@@ -34,40 +33,12 @@
   --secondary-clr: #159eec;
   --accent-clr: #bfd2f8;
 }
-body {
-  line-height: 1.5;
-  font-weight: var(--fw-normal);
-  background-color: var(--light-clr);
-}
-body.dark-theme{
+body.dark-theme {
   --light-clr: #121212;
   --dark-clr: #ffffff;
-  --primary-clr: #159eec;
-  --secondary-clr: #bfd2f8;
-  --accent-clr: #1f2b6c;
-}
-.container{
-  width: min(73.125rem, 100% - 2.5rem);
-  margin: auto;
-}
-a {
-  font: inherit;
-  color: inherit;
-  text-decoration: none;
-}
-span {
-  font: inherit;
-  color: inherit;
-}
-.flex{
-  display: flex;
-}
-.flex-column{
-  display: flex;
-  flex-direction: column;
-}
-.items-center{
-  align-items: center;
+  --primary-clr: #1f2b6c;
+  --secondary-clr: #159eec;
+  --accent-clr: #bfd2f8;
 }
 .top-header{
   padding-block:var(--space-16px);
@@ -94,6 +65,9 @@ span {
   align-items: center;
   gap: var(--space-8px);
 }
+.top-header .container .contact-info .contact-info-item:last-child{
+  order: -1;
+}
 .top-header .container .contact-info .contact-info-item >i{
   font-size: clamp(var(--fs-16px), 5vw, var(--fs-32px));
   color: var(--primary-clr);
@@ -102,23 +76,15 @@ span {
   display: inline-flex;
   flex-direction: column;
   gap: var(--space-2px);
-}
-.top-header .container .contact-info .details>span:first-child{
   font-family: var(--workSans-ff);
   font-size: clamp(var(--fs-14px), 3vw, var(--fs-16px));
   font-weight: var(--fw-medium);
+}
+.top-header .container .contact-info .details>span:first-child{
   color: var(--primary-clr);
 }
 .top-header .container .contact-info .details>span:last-child{
-  font-family: var(--workSans-ff);
-  font-size: clamp(var(--fs-14px), 2vw, var(--fs-16px));
-  font-weight: var(--fw-medium);
   color: var(--secondary-clr);
-}
-@media (max-width:991px) {
-  .top-header .container .contact-info .contact-info-item:last-child{
-    order: -1;
-  }
 }
 @media (min-width:992px) {
 .top-header .container a.logo{
@@ -127,5 +93,8 @@ span {
   .top-header .container .contact-info{
     justify-content: end;
     gap: var(--space-20px);
+  }
+  .top-header .container .contact-info .contact-info-item:last-child{
+    order: 0;
   }
 }
