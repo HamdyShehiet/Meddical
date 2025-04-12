@@ -163,9 +163,43 @@ section.hero{
   background-repeat: no-repeat;
 }
 section.hero .container {
+  position: relative;
   align-items: center;
   min-height: 75vh;
   gap:var(--space-20px);
+}
+section.hero .container .appointment-booking {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-24px);
+  position: absolute;
+  bottom: -35px;
+  right: 50%;
+  transform: translateX(50%);
+  width: 100%;
+}
+section.hero .container .appointment-booking .booking-option{
+  padding: var(--space-28px) var(--space-20px);
+  border-radius: 5px;
+  font-family: var(--workSans-ff);
+}
+section.hero .container .appointment-booking .booking-option h2{
+  font-size: var(--fs-16px);
+  font-weight: var(--fw-normal);
+}
+section.hero .container .appointment-booking .booking-option:first-child{
+  background-color: var(--primary-clr);
+  color: var(--light-clr);
+}
+section.hero .container .appointment-booking .booking-option:nth-child(2){
+  background-color: var(--accent-clr);
+  color: var(--primary-clr);
+}
+section.hero .container .appointment-booking .booking-option:last-child{
+  background-color: var(--secondary-clr);
+  color: var(--light-clr);
+
 }
 @media (max-width: 677px) {
   section.hero{
@@ -179,12 +213,17 @@ section.hero .container {
     text-align: center;
   }
 }
-@media (min-width: 678px) {
+@media (min-width: 677px) {
   section.hero{
     background-image: url(../images/hero1.png);
   }
   section.hero .container{
     min-height: 100vh;
     align-items: start;
+  }
+}
+@media (max-width: 991px) {
+  section.hero .container .appointment-booking {
+    display: none;
   }
 }
