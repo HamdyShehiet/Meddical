@@ -53,7 +53,7 @@ body.dark-theme {
   --accent-clr: #bfd2f8;
 }
 .container{
-  width: min(73.125rem, 100% - 2.5rem);
+  width: min(62rem, 100% - 2.5rem);
   margin: auto;
 }
 ul {
@@ -127,6 +127,7 @@ span.caption{
   color: var(--secondary-clr);
 }
 p.description{
+  line-height: 1.6;
   font-family: var(--workSans-ff);
   font-size: var(--fs-16px);
   color: var(--dark-clr);
@@ -135,6 +136,9 @@ p.description{
   display: inline-flex;
   align-items: center;
   gap: var(--space-12px);
+  font-family: var(--workSans-ff);
+  font-size: var(--fs-16px);
+  color: var(--secondary-clr);
 }
 .secondary-link{
   display: inline-flex;
@@ -184,7 +188,7 @@ section.hero .container .appointment-booking .booking-option{
   border-radius: 5px;
   font-family: var(--workSans-ff);
 }
-section.hero .container .appointment-booking .booking-option h2{
+section.hero .container .appointment-booking .booking-option span{
   font-size: var(--fs-16px);
   font-weight: var(--fw-normal);
 }
@@ -213,17 +217,48 @@ section.hero .container .appointment-booking .booking-option:last-child{
     text-align: center;
   }
 }
-@media (min-width: 677px) {
+@media (min-width: 678px) {
   section.hero{
     background-image: url(../images/hero1.png);
   }
   section.hero .container{
-    min-height: 100vh;
+    min-height: 85vh;
     align-items: start;
   }
 }
 @media (max-width: 991px) {
   section.hero .container .appointment-booking {
     display: none;
+  }
+}
+section.about {
+  padding: 3rem 0;
+}
+section.about .container .about-content{
+  max-width: 41.25rem;
+  width: 100%;
+  gap: var(--space-20px);
+  margin-bottom: var(--space-32px);
+}
+section.about .container .about-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 48.2vh;
+  width: 100%;
+}
+@media (min-width: 991px) {
+  section.about {
+    padding: 5rem 0 4rem 0;
+  }
+}
+@media (max-width: 677px) {
+  section.about .container .about-image {
+    background-image: url(../images/doctors-group2.png);
+  }
+}
+@media (min-width: 678px) {
+  section.about .container .about-image {
+    background-image: url(../images/doctors-group1.png);
   }
 }
