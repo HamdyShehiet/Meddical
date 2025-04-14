@@ -162,6 +162,10 @@ p.description {
   background-color: var(--accent-clr);
   color: var(--primary-clr);
 }
+.section-heading{
+  gap: var(--space-16px);
+  margin-bottom: var(--space-48px);
+}
 .section-padding {
   padding: 3rem 0;
 }
@@ -234,11 +238,9 @@ section.hero .container .appointment-booking .booking-option:last-child {
     display: none;
   }
 }
-section.about .container .about-content {
+section.about .container .about-content{
   max-width: 41.25rem;
   width: 100%;
-  gap: var(--space-16px);
-  margin-bottom: var(--space-48px);
 }
 section.about .container .about-image {
   background-position: center;
@@ -262,11 +264,49 @@ section.about .container .about-image {
     background-image: url(../images/doctors-group1.png);
   }
 }
-section.services .container .services-title {
-  gap: var(--space-16px);
-  margin-bottom: var(--space-48px);
+.services .container .services-layout{
+  justify-content: space-between;
+  align-items: start;
+  font-family:  var(--workSans-ff);
+  gap: var(--space-20px);
 }
-section.specialties .container .specialties-title {
-  gap: var(--space-16px);
-  margin-bottom: var(--space-48px);
+.services .container .services-layout .services-list .view-all {
+  display: block;
+  padding-block: var(--space-16px);
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+  background-color: var(--primary-clr);
+  color: var(--accent-clr);
+}
+.services .container .services-layout .services-list .some-services {
+  width: 9.813rem;
+  border: 1px solid #e0dfdf;
+  border-radius: 5px 5px 0 0;
+  background-color: var(--light-clr);
+}
+.services .container .services-layout .services-list .some-services .service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-12px);
+  padding: var(--space-20px) var(--space-16px);
+  font-size: var(--fs-16px);
+  color: var(--dark-clr);
+  cursor: pointer;
+}
+.services .container .services-layout .services-list .some-services .service-item.active,
+.services .container .services-layout .services-list .some-services .service-item:hover{
+  background-color: var(--primary-clr);
+  color: var(--accent-clr);
+}
+.services .container .services-layout .service-content {
+  align-self: center;
+  gap: var(--space-24px);
+  max-width: 29.375rem;
+  width: 100%;
+  color: var(--dark-clr);
+}
+.services .container .services-layout .service-content h3{
+  font-size: var(--fs-26px);
+  font-weight: var(--fw-medium);
 }
