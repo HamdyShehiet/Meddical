@@ -376,3 +376,27 @@ section.about .container .about-image {
     width: 100%;
   }
 }
+.specialties .container .specialties-list{
+  grid-template-columns: repeat(auto-fill, min(15.5rem, 100%));
+  justify-content: center;
+}
+.specialties .container .specialties-list >.specialty-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-8px);
+  padding: var(--space-48px) var(--space-24px);
+  border: 0.5px solid #f1f1f1;
+  font-family: var(--workSans-ff);
+}
+.specialties .container .specialties-list >div h3{
+  font-size: var(--fs-16px);
+  color: var(--dark-clr);
+}
+.specialties .container .specialties-list >div:hover{
+  background-color: var(--primary-clr);
+  border-radius: 5px;
+}
+.specialties .container .specialties-list >div:hover h3{
+  color: var(--accent-clr);
+}
