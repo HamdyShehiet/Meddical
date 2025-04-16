@@ -66,6 +66,7 @@ a {
 }
 input,
 button,
+select,
 textarea {
   border: none;
   outline: none;
@@ -162,7 +163,7 @@ p.description {
   background-color: var(--accent-clr);
   color: var(--primary-clr);
 }
-.section-heading{
+.section-heading {
   gap: var(--space-16px);
   margin-bottom: var(--space-48px);
 }
@@ -238,7 +239,7 @@ section.hero .container .appointment-booking .booking-option:last-child {
     display: none;
   }
 }
-section.about .container .about-content{
+section.about .container .about-content {
   max-width: 41.25rem;
   width: 100%;
 }
@@ -264,12 +265,12 @@ section.about .container .about-image {
     background-image: url(../images/doctors-group1.png);
   }
 }
-.services .container .services-layout{
+.services .container .services-layout {
   align-items: start;
   justify-content: space-between;
   flex-direction: column;
   gap: var(--space-32px);
-  font-family:  var(--workSans-ff);
+  font-family: var(--workSans-ff);
 }
 .services .container .services-layout .services-list .some-services {
   border: 1px solid #e0dfdf;
@@ -295,7 +296,7 @@ section.about .container .about-image {
   color: var(--accent-clr);
 }
 .services .container .services-layout .services-list .some-services .service-item.active,
-.services .container .services-layout .services-list .some-services .service-item:hover{
+.services .container .services-layout .services-list .some-services .service-item:hover {
   background-color: var(--primary-clr);
   color: var(--accent-clr);
 }
@@ -304,19 +305,19 @@ section.about .container .about-image {
   gap: var(--space-24px);
   color: var(--dark-clr);
 }
-.services .container .services-layout .service-content h3{
+.services .container .services-layout .service-content h3 {
   font-size: var(--fs-26px);
   font-weight: var(--fw-medium);
 }
-.services .container .services-layout .service-content ul{
-  grid-template-columns: repeat(auto-fit,minmax(12rem, 1fr));
+.services .container .services-layout .service-content ul {
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   gap: var(--space-16px);
 }
-.services .container .services-layout .service-content ul li{
+.services .container .services-layout .service-content ul li {
   position: relative;
   padding-left: 1.5rem;
 }
-.services .container .services-layout .service-content ul li::before{
+.services .container .services-layout .service-content ul li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -350,8 +351,8 @@ section.about .container .about-image {
     flex-direction: initial;
     flex-wrap: wrap;
   }
-  .services .container .services-layout .services-list .some-services .service-item{
-    width: min(10rem,100%);
+  .services .container .services-layout .services-list .some-services .service-item {
+    width: min(10rem, 100%);
     flex-grow: 1;
   }
   .services .container .services-layout .service-images {
@@ -362,7 +363,7 @@ section.about .container .about-image {
   }
 }
 @media (min-width: 1200px) {
-  .services .container .services-layout{
+  .services .container .services-layout {
     flex-direction: row;
     gap: var(--space-20px);
   }
@@ -376,11 +377,11 @@ section.about .container .about-image {
     width: 100%;
   }
 }
-.specialties .container .specialties-list{
+.specialties .container .specialties-list {
   grid-template-columns: repeat(auto-fill, min(15.5rem, 100%));
   justify-content: center;
 }
-.specialties .container .specialties-list >.specialty-item{
+.specialties .container .specialties-list > .specialty-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -389,14 +390,83 @@ section.about .container .about-image {
   border: 0.5px solid #f1f1f1;
   font-family: var(--workSans-ff);
 }
-.specialties .container .specialties-list >div h3{
+.specialties .container .specialties-list > div h3 {
   font-size: var(--fs-16px);
   color: var(--dark-clr);
 }
-.specialties .container .specialties-list >div:hover{
+.specialties .container .specialties-list > div:hover {
   background-color: var(--primary-clr);
   border-radius: 5px;
 }
-.specialties .container .specialties-list >div:hover h3{
+.specialties .container .specialties-list > div:hover h3 {
   color: var(--accent-clr);
+}
+section.appointment {
+  background-image: url(../images/Appointment1.png);
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.appointment .container {
+  min-height: 75vh;
+  justify-content: center;
+  align-items: center;
+  row-gap: var(--space-32px);
+}
+section.appointment .container .appointment-info {
+  text-align: center;
+}
+section.appointment .container .appointment-info h2.title {
+  margin-bottom: var(--space-8px);
+  color: var(--secondary-clr);
+}
+@media (min-width: 992px) {
+  section.appointment .container {
+    grid-template-columns: 25.438rem 30.688rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section.appointment .container .appointment-info {
+    text-align: left;
+  }
+}
+section.appointment .container form {
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: var(--workSans-ff);
+  background-color: var(--primary-clr);
+  color: var(--light-clr);
+}
+section.appointment .container form .form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.313rem, 1fr));
+}
+section.appointment .container form .form-row .form-group select,
+section.appointment .container form .form-row .form-group input {
+  width: 100%;
+  height: 3.125rem;
+  padding: var(--space-16px) var(--space-8px);
+  border: 1px solid #e6e5e5;
+  background-color: transparent;
+}
+section.appointment .container form textarea::placeholder,
+section.appointment .container form .form-row .form-group input::placeholder {
+  color: var(--light-clr);
+}
+section.appointment .container form .form-row .form-group select option {
+  background-color: var(--primary-clr);
+}
+section.appointment .container form textarea {
+  display: block;
+  max-height: 10rem;
+  max-width: 100%;
+  min-width: 100%;
+  padding: var(--space-16px) var(--space-8px);
+}
+section.appointment .container form .btn-submit {
+  width: 100%;
+  padding: var(--space-16px) 0;
+  font-weight: var(--fw-medium);
+  background-color: var(--accent-clr);
+  color: var(--primary-clr);
 }
