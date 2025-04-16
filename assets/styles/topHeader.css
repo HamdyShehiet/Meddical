@@ -33,13 +33,6 @@
   --secondary-clr: #159eec;
   --accent-clr: #bfd2f8;
 }
-body.dark-theme {
-  --light-clr: #121212;
-  --dark-clr: #ffffff;
-  --primary-clr: #1f2b6c;
-  --secondary-clr: #159eec;
-  --accent-clr: #bfd2f8;
-}
 .top-header{
   padding-block:var(--space-16px);
 }
