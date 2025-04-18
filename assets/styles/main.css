@@ -159,7 +159,7 @@ p.description {
   color: var(--primary-clr);
 }
 .section-heading {
-  gap: var(--space-16px);
+  gap: var(--space-12px);
   margin-bottom: var(--space-48px);
 }
 .section-padding {
