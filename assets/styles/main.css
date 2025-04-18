@@ -116,11 +116,6 @@ h2.title {
   font-size: clamp(var(--fs-24px), 5vw, var(--fs-32px));
   color: var(--primary-clr);
 }
-h3.title {
-  font-family: var(--workSans-ff);
-  font-size: var(--fs-14px);
-  color: var(--secondary-clr);
-}
 span.caption {
   letter-spacing: 4px;
   font-family: var(--workSans-ff);
@@ -469,4 +464,18 @@ section.appointment .container form .btn-submit {
   font-weight: var(--fw-medium);
   background-color: var(--accent-clr);
   color: var(--primary-clr);
+}
+.container .slider-dots {
+  margin-top: var(--space-32px);
+  gap: var(--space-12px);
+}
+.container .slider-dots li{
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--accent-clr);
+}
+.container .slider-dots li.active{
+  background-color: var(--primary-clr);
 }
