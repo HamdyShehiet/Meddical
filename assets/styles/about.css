@@ -113,13 +113,13 @@ h1.title {
 }
 h2.title {
   font-family: var(--yesevaOne-ff);
-  font-size: clamp(var(--fs-24px), 5vw, var(--fs-32px));
+  font-size: clamp(var(--fs-36px), 5vw, var(--fs-48px));
   color: var(--primary-clr);
 }
 span.caption {
   letter-spacing: 4px;
   font-family: var(--workSans-ff);
-  font-size: clamp(var(--fs-16px), 5vw, var(--fs-18px));
+  font-size: clamp(var(--fs-16px), 2vw, var(--fs-18px));
   font-weight: var(--fw-bold);
   color: var(--secondary-clr);
 }
@@ -165,6 +165,46 @@ p.description {
 .section-padding {
   padding: 3rem 0;
 }
-.hero{
-  background-image: url(../images/heroAbout.png);
+.hero {
+  background-image: url(../images/hero-about.png);
+}
+.about .container {
+  gap: var(--space-16px);
+  font-family: var(--workSans-ff);
+}
+.about .container .image{
+  text-align: center;
+}
+.about .container article {
+  gap: var(--space-20px);
+  color: var(--dark-clr);
+}
+.about .container article h3 {
+  font-size: var(--fs-26px);
+  font-weight: var(--fw-medium);
+}
+.about .container article ul {
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: var(--space-16px);
+}
+.about .container article ul li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+.about .container article ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--secondary-clr);
+}
+@media (min-width: 992px) {
+  .about .container {
+    grid-template-columns: 25.5rem  1fr;
+    justify-content: center;
+  }
 }
