@@ -77,17 +77,17 @@
 .news .container .news-list .news-card .news-content .news-meta .likes svg{
   color: #cf0606;
 }
-.container .slider-dots {
+.news .container .slider-dots {
   margin-top: var(--space-32px);
   gap: var(--space-12px);
 }
-.container .slider-dots li{
+.news .container .slider-dots li{
   width: 1.125rem;
   height: 1.125rem;
   border-radius: 50%;
   cursor: pointer;
   background-color: var(--accent-clr);
 }
-.container .slider-dots li.active{
+.news .container .slider-dots li.active{
   background-color: var(--primary-clr);
 }

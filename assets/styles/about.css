@@ -208,16 +208,3 @@ p.description {
     justify-content: center;
   }
 }
-.testimonials .slider-dots {
-  gap: var(--space-12px);
-}
-.testimonials .slider-dots li{
-  width: 1.125rem;
-  height: 1.125rem;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: var(--light-clr);
-}
-.testimonials .slider-dots li.active{
-  background-color: var(--accent-clr);
-}

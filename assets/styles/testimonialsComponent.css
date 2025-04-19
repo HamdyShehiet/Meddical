@@ -1,0 +1,47 @@
+:root {
+  --workSans-ff: "Work Sans", sans-serif;
+  --fs-22px: 1.375rem;
+  --space-12px: 0.75rem;
+  --space-28px: 1.75rem;
+  --space-48px: 3rem;
+  --light-clr: #fcfefe;
+  --accent-clr: #bfd2f8;
+}
+.testimonials {
+  background-image: url(../images/testimonials-image.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.testimonials .container {
+  min-height: 65vh;
+  font-family: var(--workSans-ff);
+}
+.testimonials .container .testimonials-slider .slide{
+  max-width: 41.15rem;
+  width: 100%;
+  gap: var(--space-28px);
+}
+.testimonials .container .testimonials-slider .slide{
+  line-height: 1.5;
+  font-size: var(--fs-22px);
+  color: var(--light-clr);
+}
+.testimonials .container .testimonials-slider .slide .Person-name{
+  padding-top: var(--space-12px);
+  padding-inline: var(--space-48px);
+  border-top: 1px solid #bebdbd;
+}
+.testimonials .slider-dots {
+  gap: var(--space-12px);
+}
+.testimonials .slider-dots li{
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--light-clr);
+}
+.testimonials .slider-dots li.active{
+  background-color: var(--accent-clr);
+}
