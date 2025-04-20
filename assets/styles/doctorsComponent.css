@@ -41,6 +41,7 @@
 }
 .doctors .container .doctors-slider .doctor-card {
   border-radius: 5px;
+  overflow: hidden;
 }
 .doctors .container .doctors-slider .doctor-card .doctor-info {
   display: flex;
