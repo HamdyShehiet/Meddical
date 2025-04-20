@@ -71,10 +71,10 @@
   font-size: var(--fs-14px);
   color: var(--dark-clr);
 }
-.news .container .news-list .news-card .news-content .news-meta .views svg{
+.news .container .news-list .news-card .news-content .news-meta .views i{
   color: #5757f0;
 }
-.news .container .news-list .news-card .news-content .news-meta .likes svg{
+.news .container .news-list .news-card .news-content .news-meta .likes i{
   color: #cf0606;
 }
 .news .container .slider-dots {

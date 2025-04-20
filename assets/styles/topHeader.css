@@ -61,7 +61,7 @@
 .top-header .container .contact-info .contact-info-item:last-child{
   order: -1;
 }
-.top-header .container .contact-info .contact-info-item >svg{
+.top-header .container .contact-info .contact-info-item > i{
   font-size: clamp(var(--fs-16px), 5vw, var(--fs-32px));
   color: var(--primary-clr);
 }

@@ -68,6 +68,12 @@ header .container .nav-right .search-btn {
   color: var(--light-clr);
   cursor: pointer;
 }
+header .container .nav-right .theme-btn,
+header .container .nav-right .menu-btn {
+  font-size: var(--fs-24px);
+  color: var(--light-clr);
+  cursor: pointer;
+}
 @media (max-width: 991px) {
   header .container nav ul {
     display: none;
@@ -94,11 +100,6 @@ header .container .nav-right .search-btn {
   }
   header .container .nav-right > a {
     display: none;
-  }
-  header .container .nav-right .menu-btn {
-    font-size: var(--fs-24px);
-    color: var(--light-clr);
-    cursor: pointer;
   }
   header .container nav ul li a.appointment-link {
     padding: 0.813rem 2.188rem;
