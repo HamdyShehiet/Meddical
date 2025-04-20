@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
 }
 .hero .container {
-  min-height: 41vh;
+  min-height: 39.4vh;
   gap: var(--space-8px);
 }
 .hero .container .links{
