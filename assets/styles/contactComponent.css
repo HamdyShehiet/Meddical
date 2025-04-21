@@ -33,31 +33,31 @@
   --secondary-clr: #159eec;
   --accent-clr: #bfd2f8;
 }
-.contact .container .contact-boxes {
+.container .contact-boxes {
   grid-template-columns: repeat(auto-fill, min(14.9rem, 100%));
   justify-content: center;
   gap: var(--space-12px);
   font-family: var(--workSans-ff);
 }
-.contact .container .contact-boxes .contact-box {
+.container .contact-boxes .contact-box {
   padding: var(--space-32px) var(--space-20px);
   border-radius: 5px;
   background-color: var(--accent-clr);
   color: var(--primary-clr);
 }
-.contact .container .contact-boxes .contact-box:nth-child(2) {
+.container .contact-boxes .contact-box:nth-child(2) {
   background-color: var(--primary-clr);
   color: var(--accent-clr);
 }
-.contact .container .contact-boxes .contact-box .contact-Icon {
+.container .contact-boxes .contact-box .contact-Icon {
   font-size: var(--fs-36px);
 }
-.contact .container .contact-boxes .contact-box h3 {
+.container .contact-boxes .contact-box h3 {
   margin: var(--space-16px) 0 var(--space-8px) 0;
   font-size: var(--fs-18px);
   font-weight: var(--fw-bold);
 }
-.contact .container .contact-boxes .contact-box div > span {
+.container .contact-boxes .contact-box div > span {
   display: inline-block;
   margin-top: var(--space-4px);
   font-size: var(--fs-16px);

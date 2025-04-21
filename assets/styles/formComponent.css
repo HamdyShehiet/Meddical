@@ -42,7 +42,7 @@
 }
 .container form .form-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15.313rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 .container form .form-row .form-group select,
 .container form .form-row .form-group input {
