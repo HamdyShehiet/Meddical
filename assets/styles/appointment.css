@@ -239,3 +239,6 @@ p.description {
   row-gap: var(--space-20px);
 }
 }
+iframe{
+  border-radius: 5px;
+}
