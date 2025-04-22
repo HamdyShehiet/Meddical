@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meddical</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles/topHeader.css" />
+    <link rel="stylesheet" href="assets/styles/header.css" />
+    <link rel="stylesheet" href="assets/styles/footer.css" />
+    <link rel="stylesheet" href="assets/styles/heroComponent.css" />
+    <link rel="stylesheet" href="assets/styles/contactComponent.css" />
+    <link rel="stylesheet" href="assets/styles/formComponent.css" />
+    <link rel="stylesheet" href="assets/styles/appointment.css" />
+  </head>
+  <body>
+    <div class="top-header">
+      <div class="container flex items-center justify-between">
+        <a href="index.html" class="logo"> <span>MED</span><span>DICAL</span> </a>
+        <div class="contact-info flex items-center">
+          <div class="contact-info-item">
+            <i class="fa-solid fa-phone-volume"></i>
+            <div class="details">
+              <span>Emergency</span>
+              <span>(237) 681-812-255</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="far fa-clock"></i>
+            <div class="details">
+              <span>Work Hour</span>
+              <span>09:00 - 20:00 Everyday</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="details">
+              <span>Location</span>
+              <span>0123 Some Place</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container flex items-center justify-between">
+        <a href="index.html" class="logo"> <span>MED</span><span>DICAL</span> </a>
+        <nav>
+          <ul id="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="appointment.html" class="appointment-link">Appointment</a></li>
+          </ul>
+          <div class="nav-right flex items-center">
+            <button id="search-btn" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button id="menu-btn" class="menu-btn"><i id="menu-icon" class="fa-solid fa-bars"></i></button>
+            <button id="theme-btn" class="theme-btn"><i id="theme-icon" class="fa-solid fa-moon"></i></button>
+            <a href="appointment.html" class="main-btn">Appointment</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container flex-column justify-center">
+          <div class="links">
+            <a href="index.html">Home /</a>
+            <a href="about.html"> Appointment</a>
+          </div>
+          <h1 class="title">Book an Appointment</h1>
+        </div>
+      </section>
+      <section class="appointment section-padding">
+        <div class="container grid">
+          <div>
+            <div class="section-heading flex-column">
+              <h2 class="title">Book an Appointment</h2>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. Convallis felis vitae tortor augue. Velit nascetur proin massa in. Consequat
+                faucibus porttitor enim et.
+              </p>
+            </div>
+            <form>
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" placeholder="Name" required />
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="gender" required>
+                    <option value="" selected disabled>Gender</option>
+                    <option value="09:00">Male</option>
+                    <option value="10:00">Female</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" placeholder="Email" required />
+                </div>
+                <div class="form-group">
+                  <input type="tel" class="form-control" id="phone" placeholder="Phone" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="date" class="form-control" id="date" required />
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="time" required>
+                    <option value="" selected disabled>Time</option>
+                    <option value="09:00">09:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="14:00">02:00 PM</option>
+                    <option value="15:00">03:00 PM</option>
+                    <option value="16:00">04:00 PM</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <select class="form-control" id="doctor" required>
+                    <option value="" selected disabled>Doctor</option>
+                    <option value="dr-smith">Dr. Smith</option>
+                    <option value="dr-johnson">Dr. Johnson</option>
+                    <option value="dr-williams">Dr. Williams</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="department" required>
+                    <option value="" selected disabled>Department</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="orthopedics">Orthopedics</option>
+                    <option value="pediatrics">Pediatrics</option>
+                  </select>
+                </div>
+              </div>
+              <textarea class="textarea-control" id="message" placeholder="Message" rows="7"></textarea>
+              <input type="submit" class="btn-submit" />
+            </form>
+          </div>
+          <div class="shedule-hours grid">
+            <span class="title text-center">Shedule hours</span>
+            <ul>
+              <li><span>Monday</span><span>09:00 AM - 07:00 PM</span></li>
+              <li><span>Tuesday</span><span>09:00 AM - 07:00 PM</span></li>
+              <li><span>Wednesday</span><span>09:00 AM - 07:00 PM</span></li>
+              <li><span>Thursday</span><span>09:00 AM - 07:00 PM</span></li>
+              <li><span>Friday</span><span>09:00 AM - 07:00 PM</span></li>
+              <li><span>Saturday</span><span>09:00 AM - 07:00 PM</span></li>
+              <li><span>Sunday</span><span>Closed</span></li>
+            </ul>
+            <div class="emergency flex items-center justify-center">
+              <i class="fa-solid fa-phone-volume"></i>
+              <div class="details i-flex">
+                <span>Emergency</span>
+                <span>(237) 681-812-255</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact section-padding">
+        <div class="container">
+          <div class="section-heading flex-column items-center">
+            <span class="caption">GET IN TOUCH</span>
+            <h2 class="title">Contact</h2>
+          </div>
+          <div class="contact-boxes grid">
+            <div class="contact-box">
+              <div class="contact-Icon"><i class="fa-solid fa-phone-volume"></i></div>
+              <h3>EMERGENCY</h3>
+              <div>
+                <span>(237) 681 812 255</span>
+                <span>(237) 666 331 894</span>
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="contact-Icon"><i class="fa-solid fa-location-dot"></i></div>
+              <h3>LOCATION</h3>
+              <div>
+                <span>0123 Some place</span>
+                <span>9876 Some country</span>
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="contact-Icon"><i class="fa-regular fa-envelope"></i></div>
+              <h3>EMAIL</h3>
+              <div>
+                <span>fildineeesoe@gmil.com</span>
+                <span>myebstudios@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="contact-Icon"><i class="far fa-clock"></i></div>
+              <h3>WORKING HOURS</h3>
+              <div>
+                <span>Monday-Sat 09:00-20-00</span>
+                <span>Sunday Emergency only</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-top grid">
+          <div class="footer-logo">
+            <a href="index.html" class="logo">MEDDICAL</a>
+            <p>
+              Leading the Way in Medical <br />
+              Excellence, Trusted Care.
+            </p>
+          </div>
+          <div class="footer-links">
+            <span>Important Links</span>
+            <ul>
+              <li><a href="#">Appointment</a></li>
+              <li><a href="#">Doctors</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <span>Contact Us</span>
+            <ul>
+              <li>Call: (237) 681-812-255</li>
+              <li>Email: fildineesoe@gmail.com</li>
+              <li>Address: 0123 Some place <br />Some Country</li>
+            </ul>
+          </div>
+          <div class="newsletter">
+            <span>Newsletter</span>
+            <form class="newsletter-form flex items-center">
+              <input type="email" class="newsletter-input" placeholder="Enter your email address" />
+              <button type="submit" class="newsletter-button"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom flex items-center justify-between">
+          <p>&copy; 2021 Hospital’s name All Rights Reserved by PNTEC-LTD</p>
+          <ul class="footer-social flex items-center">
+            <li>
+              <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/?locale=ar_AR" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>
