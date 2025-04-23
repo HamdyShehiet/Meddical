@@ -6,6 +6,7 @@
 :root {
   --yesevaOne-ff: "Yeseva One", serif;
   --workSans-ff: "Work Sans", sans-serif;
+  --fs-12px: 0.75rem;
   --fs-14px: 0.875rem;
   --fs-16px: 1rem;
   --fs-18px: 1.125rem;
@@ -111,7 +112,8 @@ h1.title {
   font-size: clamp(var(--fs-24px), 5vw, var(--fs-48px));
   color: var(--primary-clr);
 }
-h2.title {
+h2.title,
+span.title {
   font-family: var(--yesevaOne-ff);
   font-size: clamp(var(--fs-24px), 5vw, var(--fs-32px));
   color: var(--primary-clr);
@@ -132,7 +134,7 @@ p.description {
 .primary-link {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-12px);
+  gap: var(--space-8px);
   font-family: var(--workSans-ff);
   font-size: var(--fs-16px);
   color: var(--secondary-clr);
@@ -167,4 +169,129 @@ p.description {
 }
 .hero {
   background-image: url(../images/hero-news.png);
+}
+.posts .container {
+  gap: var(--space-48px) var(--space-20px);
+  font-family: var(--workSans-ff);
+}
+.posts .container .posts-container .posts-list .post{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--space-16px);
+  margin-bottom: var(--space-32px);
+}
+.posts .container .posts-container .posts-list .post .post-image{
+  align-self: center;
+}
+.posts .container .posts-container .posts-list .post .post-details{
+  flex-wrap: wrap;
+  gap: var(--space-20px);
+}
+.posts .container .posts-container .posts-list .post .post-details > div{
+  display: flex;
+  align-items: center;
+  gap: var(--space-8px);
+}
+.posts .container .posts-container .posts-list .post .post-details > div span {
+  font-size: var(--fs-14px);
+  color: var(--dark-clr);
+}
+.posts .container .posts-container .posts-list .post .post-details .post-date i{
+  color: #5757f0;
+}
+.posts .container .posts-container .posts-list .post .post-details .post-author i{
+  color: var(--secondary-clr);
+}
+.posts .container .posts-container .posts-list .post .post-details .views i{
+  color: #5757f0;
+}
+.posts .container .posts-container .posts-list .post .post-details .likes i{
+  color: #cf0606;
+}
+.posts .container .posts-container .posts-options {
+  flex-wrap: wrap;
+  gap: var(--space-20px) 5rem;
+}
+.posts .container .posts-container .posts-options > ul{
+  gap: var(--space-12px);
+  overflow-x: hidden;
+  color: var(--secondary-clr);
+}
+.posts .container .posts-container .posts-options > ul li.active{
+  color: var(--primary-clr);
+}
+.posts .container .more-posts .search-box{
+  padding: var(--space-12px) var(--space-20px);
+  border-radius: 5px;
+  background-color: var(--primary-clr);
+}
+.posts .container .more-posts .search-box input{
+  flex-grow: 1;
+  background-color: transparent;
+  font-weight: var(--fw-medium);
+  color: var(--light-clr);
+}
+.posts .container .more-posts .search-box input::placeholder{
+  color: var(--accent-clr);
+}
+.posts .container .more-posts .search-box i{
+  font-size: var(--fs-24px);
+  color: var(--accent-clr);
+}
+.posts .container .more-posts .recent-posts{
+  margin: var(--space-24px) 0;
+  padding: var(--space-20px);
+  border: 1px solid #eeecece7;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.posts .container .more-posts .recent-posts .recent-posts-list{
+  margin-top: var(--space-12px);
+}
+.posts .container .more-posts .recent-posts .recent-posts-list .recent-post{
+  display: flex;
+  align-items: center;
+  gap: var(--space-16px);
+  margin: var(--space-12px) 0;
+  font-size: var(--fs-14px);
+  font-weight: var(--fw-medium);
+  color:var(--dark-clr);
+}
+.posts .container .more-posts .recent-posts .recent-posts-list .recent-post .details .recent-post-date{
+  display: block;
+  margin-bottom: var(--space-6px);
+  color: var(--secondary-clr);
+}
+.posts .container .more-posts .categories{
+  padding: var(--space-20px);
+  border: 1px solid #eeecece7;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.posts .container .more-posts .categories div.categories-list {
+  margin-top: var(--space-8px);
+}
+.posts .container .more-posts .categories div.categories-list a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-16px) 0;
+  font-size: var(--fs-18px);
+  font-weight: var(--fw-medium);
+}
+.posts .container .more-posts .categories div.categories-list a span.category-posts-count{
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--secondary-clr);
+  color: var(--light-clr);
+}
+@media (min-width: 1050px) {
+  .posts .container {
+    grid-template-columns: 41.125rem 19.625rem;
+    justify-content: space-between;
+  }
 }
