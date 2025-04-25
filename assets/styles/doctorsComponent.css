@@ -35,6 +35,7 @@
 }
 .doctors .container .doctors-slider{
   grid-template-columns: repeat(auto-fill, min(19.813rem, 100%));
+  overflow: hidden;
   justify-content: center;
   gap: var(--space-20px);
   font-family: var(--workSans-ff);

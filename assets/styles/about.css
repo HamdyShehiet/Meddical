@@ -46,11 +46,11 @@ body {
   background-color: var(--light-clr);
 }
 body.dark-theme {
-  --light-clr: #121212;
-  --dark-clr: #ffffff;
-  --primary-clr: #1f2b6c;
-  --secondary-clr: #159eec;
-  --accent-clr: #bfd2f8;
+  --light-clr: #1A1A1A;
+  --dark-clr: #F0F0F0;
+  --primary-clr: #3E5641;
+  --secondary-clr: #822659;
+  --accent-clr: #F0F0F0;
 }
 .container {
   width: min(62rem, 100% - 2.5rem);
